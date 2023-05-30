@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04f39124.css",
+    "main.js": "/static/js/main.fca197be.js",
+    "static/media/bg1.png": "/static/media/bg1.08230f63e712c9bf3fe2.png",
+    "static/media/vue-music-app.png": "/static/media/vue-music-app.7f00b7be08b4114dfb60.png",
+    "static/media/meeting-room.png": "/static/media/meeting-room.e79a7fcfe98c3dbd724e.png",
+    "static/media/about-me.jpg": "/static/media/about-me.63df73929e5be2f2346d.jpg",
+    "static/media/derick 4.png": "/static/media/derick 4.2508daec9e05966a5e22.png",
+    "static/media/Mumia Derick CV.pdf": "/static/media/Mumia Derick CV.6f037ce419d7f4660e15.pdf",
+    "static/media/Aml.jpg": "/static/media/Aml.e7b5c40affad88ca4eda.jpg",
+    "static/media/bill-estimator.png": "/static/media/bill-estimator.f7f8e5a8e85a1a733873.png",
+    "static/media/Drick__Logo.png": "/static/media/Drick__Logo.062c4a739a3111705d14.png",
+    "static/media/Bresen.png": "/static/media/Bresen.815a3b9dc128c1ccd952.png",
+    "index.html": "/index.html",
+    "main.04f39124.css.map": "/static/css/main.04f39124.css.map",
+    "main.fca197be.js.map": "/static/js/main.fca197be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04f39124.css",
+    "static/js/main.fca197be.js"
+  ]
+}
