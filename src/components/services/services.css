@@ -10,29 +10,33 @@
     padding-top: 6rem;
 } 
 .service {
-    background: var(--color-bg-variant);
-    border-radius: 2rem 2rem 2rem 2rem;
-    border: 1px solid var(--color-primary);
+    background: transparent;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     height: fit-content;
     transition: var(--transition);
     width: 22rem;
 }
 
 .service:hover {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.4);
     border-color: var(--color-primary-variant);
     cursor: default;
+    transform: translateY(-1%) scale(1.02);
 }
 
 .service_head {
-    background: var(--color-primary-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-light);
     padding: 1rem;
-    border-radius: 2rem 2rem 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
 }
 
 .service_head h3 {
-    color: var(--color-bg);
+    color: #fff;
     font-size: 1rem;
     text-align: center;
 }

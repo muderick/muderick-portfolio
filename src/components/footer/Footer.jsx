@@ -42,6 +42,7 @@ const Footer = () => {
                     href="https://www.instagram.com/mu_drick/"
                     target="_blank"
                     rel="noreferrer"
+                    title="Instagram"
                 >
                     <BsInstagram />
                 </a>
@@ -49,6 +50,7 @@ const Footer = () => {
                     href="https://ke.linkedin.com/in/mu-derick/"
                     target="_blank"
                     rel="noreferrer"
+                    title="LinkedIn"
                 >
                     <BsLinkedin />
                 </a>
@@ -56,6 +58,7 @@ const Footer = () => {
                     href="https://github.com/muderick"
                     target="_blank"
                     rel="noreferrer"
+                    title="Github"
                 >
                     <FaGithub />
                 </a>

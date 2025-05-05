@@ -1,5 +1,5 @@
 nav {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
     width: max-content;
     display: block;
     padding: 0.6rem 1.6rem;
@@ -11,7 +11,8 @@ nav {
     display: flex;
     gap: 1.2rem;
     border-radius: 3rem;
-    backdrop-filter: transparent;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
@@ -20,18 +21,19 @@ nav a {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    color: var(--color-light);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.1rem;
     width: 36.78px;
 }
 
 nav a:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
 nav a.active {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
 .home, .about, .experience, .services, .contacts, .portfolio {
@@ -43,6 +45,7 @@ nav a.active {
     font-weight: 100;
     text-align: center;
     opacity: 0.8;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 /* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */

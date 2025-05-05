@@ -11,6 +11,7 @@ const Headersocials = () => {
               href="https://ke.linkedin.com/in/mu-derick/"
               target="_blank"
               rel="noreferrer"
+              title='LinkedIn'
           >
               <BsLinkedin size={32} />
           </a>
@@ -18,6 +19,7 @@ const Headersocials = () => {
               href="https://github.com/muderick/"
               target="_blank"
               rel="noreferrer"
+              title='Github'
           >
               <FaGithub size={32}/>
           </a>

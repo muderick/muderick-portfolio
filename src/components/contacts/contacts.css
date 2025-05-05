@@ -18,7 +18,7 @@
 .contacts_option {
     background: var(--color-bg-variant);
     padding: 1.2rem;
-    border-radius: 1.2rem;
+    border-radius: 1rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -27,6 +27,7 @@
 .contacts_option:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
+    transform: scale(1.02);
 }
 
 .contacts_option-icon {
@@ -51,10 +52,16 @@ input, textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid var(--color-bg-variant);
     resize: none;
     color: var(--color-white);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
