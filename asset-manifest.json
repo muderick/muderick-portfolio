@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e2c490e.css",
+    "main.css": "/static/css/main.e18a1ea5.css",
     "main.js": "/static/js/main.21d90bab.js",
     "static/media/tech-mobile.jpg": "/static/media/tech-mobile.5303a1bcb60e6fc7ef1c.jpg",
     "static/media/vue-music-app.png": "/static/media/vue-music-app.7f00b7be08b4114dfb60.png",
@@ -13,11 +13,11 @@
     "static/media/Drick__Logo.png": "/static/media/Drick__Logo.062c4a739a3111705d14.png",
     "static/media/Bresen.png": "/static/media/Bresen.815a3b9dc128c1ccd952.png",
     "index.html": "/index.html",
-    "main.6e2c490e.css.map": "/static/css/main.6e2c490e.css.map",
+    "main.e18a1ea5.css.map": "/static/css/main.e18a1ea5.css.map",
     "main.21d90bab.js.map": "/static/js/main.21d90bab.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e2c490e.css",
+    "static/css/main.e18a1ea5.css",
     "static/js/main.21d90bab.js"
   ]
 }
