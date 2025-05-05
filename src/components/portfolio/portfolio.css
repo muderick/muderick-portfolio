@@ -1,0 +1,232 @@
+#portfolio {
+  margin-top: 8rem; /* Reduced from 16rem for better spacing */
+  padding-top: 2rem;
+}
+
+.portfolio_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+/* Base styles for all portfolio items */
+.portfolio_item,
+.portfolio_item-cont {
+  background: transparent;
+  padding: 1.5rem;
+  border-radius: 1rem 0 1rem 0;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: auto; /* Remove fixed height */
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.portfolio_item:hover,
+.portfolio_item-cont:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.02);
+}
+
+.portfolio_item-image {
+  border-radius: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16/10; /* Maintain consistent image ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio_item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers area without distortion */
+}
+
+/* Title styling */
+.portfolio_item h3,
+.portfolio_item-cont h3 {
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Prevent long titles from breaking layout */
+}
+
+/* Button layouts */
+.portfolio_item-cta {
+  margin-top: auto; /* Push to bottom of flex container */
+}
+
+.portfolio_btns {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto; /* Push to bottom of flex container */
+}
+
+/* Contributor button styling */
+.cont-btn {
+  position: relative;
+  width: fit-content;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: all 0.3s ease;
+  overflow: visible; /* Changed from hidden */
+}
+
+.cont-btn:hover {
+  background: var(--color-bg-variant);
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+/* Contributor overlay styling */
+.cont-overlay {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 150px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--color-bg-variant);
+  z-index: 10;
+  transition: all 350ms cubic-bezier(0, 0, 0.2, 1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cont-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cont-body a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-img {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 0.2rem solid var(--color-primary-variant);
+}
+
+.cont-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cont-body h3,
+.cont-body h4 {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.cont-body h4 {
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+/* Github button */
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+/* =================== MEDIA QUERIES ==================== */
+
+/* Large screens */
+@media screen and (min-width: 1025px) {
+  .cont-btn:hover .cont-overlay {
+    display: flex;
+  }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 1024px) {
+  .portfolio_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  #portfolio {
+    margin-top: 6rem;
+  }
+}
+
+/* Small tablets and large phones */
+@media screen and (max-width: 768px) {
+  .portfolio_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .btn-mobile {
+    display: inline-flex;
+  }
+
+  .btn-desktop {
+    display: none;
+  }
+
+  #portfolio {
+    margin-top: 5rem;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 600px) {
+  .portfolio_container {
+    gap: 1.5rem;
+  }
+
+  .portfolio_item,
+  .portfolio_item-cont {
+    padding: 1rem;
+  }
+
+  #portfolio {
+    margin-top: 4rem;
+  }
+
+  .portfolio_btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cont-overlay {
+    display: none !important; /* Force hide on mobile */
+  }
+}
+
+/* Specific width fixes */
+@media screen and (width: 720px) {
+  #portfolio {
+    padding-top: 3rem;
+  }
+}

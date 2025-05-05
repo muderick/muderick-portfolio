@@ -1,0 +1,170 @@
+#about {
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about_me {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: var(--color-primary-variant);
+    display: grid;
+    place-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about_me-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img {
+        position: absolute;
+        top: -2%;
+        right: -2%;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+    &:hover img {
+        top: 0;
+        right: 0;
+    }
+}
+
+.floating-badge {
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    background: #ffa500;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: float 5s ease-in-out infinite;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateZ(0);
+    }
+    50% {
+        transform: translateY(-20px) translateZ(0);
+    }
+}
+
+.about_me-image:hover .floating-badge {
+    top: 10px;
+    right: -10px;
+    transform: translateZ(0) scale(1.02);
+}
+
+.about_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about_card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about_card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: pointer;
+    transform: scale(1.05)
+}
+
+.about_icon {
+    color: var(--color-dark);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5 {
+    font-size: 0.95rem;
+}
+
+.about_card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.about_content p {
+    margin: 2rem 0 2.6rem;
+    color: rgba(51, 51, 51, 0.8);
+}
+
+.about_btn {
+    transition: var(--transition)
+}
+
+.about_btn:hover {
+    transform: scale(1.05);
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about_me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    .about_content p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    #about {
+        margin-top: 4rem;
+    }
+
+    .about_me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about_content {
+        text-align: center;
+    }
+
+    .about_content {
+        margin: 1.5rem 0;
+    }
+    .about_btn {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,60 @@
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    width: max-content;
+    display: block;
+    padding: 0.6rem 1.6rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    width: 36.78px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.home, .about, .experience, .services, .contacts, .portfolio {
+    display: block;
+}
+
+.nav_p {
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    .nav_p {
+        display: none;
+    }
+
+    nav {
+        gap: 0.8rem;
+    }
+}
