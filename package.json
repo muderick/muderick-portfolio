@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "deploy": "npm run build && gh-pages -b gh-pages -d build -r https://github.com/muderick/muderick.github.io.git",
+    "deploy": "npm run build && gh-pages -b gh-pages -d build --repo https://github.com/muderick/muderick.github.io.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
