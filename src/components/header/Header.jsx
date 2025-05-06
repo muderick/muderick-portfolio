@@ -17,7 +17,7 @@ const Header = () => {
   // Add staggered animation effect to tech stack items
   useEffect(() => {
     if (techStackRef.current) {
-      const items = techStackRef.current.querySelectorAll("span");
+      const items = techStackRef.current.querySelectorAll(".tech-item");
 
       items.forEach((item, index) => {
         item.style.opacity = "0";
@@ -64,6 +64,7 @@ const Header = () => {
 
   return (
     <header>
+      {/* Background images */}
       <div className="header-bg-desktop">
         <img src={desktopBg} alt="Background" />
       </div>
@@ -72,28 +73,31 @@ const Header = () => {
         <img src={mobileBg} alt="Background" />
       </div>
 
-      {/* Dark overlay */}
+      {/* Dark overlay - making this darker */}
       <div className="header-overlay"></div>
 
-      <div className="top"></div>
-      <div className="container header_container">
-        <div className="container-info">
-          <div className="container-info_names">
-            <div className="greeting-badge">Welcome to my portfolio</div>
-            <h5>Hi, I'm</h5>
-            <h1>Mumia Derick</h1>
-            <h4 className="text-light">Front-End Developer</h4>
-            <p className="intro-text">
-              I craft responsive websites where technologies meet creativity.
-              Building user-friendly interfaces is my passion.
-            </p>
-            <Cta />
-          </div>
+      <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
+      <div className="logo_ext">
+        <h6>Mumia.</h6>
+      </div>
 
+      <div className="container header_container">
+        <div className="hero-content">
+          <div className="greeting-badge">Welcome to my portfolio</div>
+          <h5>Hi, I'm</h5>
+          <h1>Mumia Derick</h1>
+          <h4 className="text-light">Front-End Developer</h4>
+          <p className="intro-text">
+            I craft responsive websites where technologies meet creativity.
+            Building user-friendly interfaces is my passion.
+          </p>
+          <Cta />
           <Headersocials />
         </div>
 
-        <div className="mine">
+        <div className="tech-section" ref={techStackRef}>
           <div className="expertise-header">
             <h4 className="expertise-title">
               Expertise
@@ -120,7 +124,7 @@ const Header = () => {
               <div className="pulse-dot"></div>
               <div className="pulse-ring"></div>
             </div>
-            <p className="project-text">Building an Ecommerce System</p>
+            <p className="project-text">Currently building an Ecommerce System</p>
           </div>
         </div>
 
@@ -128,14 +132,6 @@ const Header = () => {
           Down <AiFillCaretRight className="down_arrow" />
         </a>
       </div>
-
-      <div className="logo">
-        <img src={logo} alt="Logo" />
-      </div>
-      <div className="logo_ext">
-        <h6>Mumia.</h6>
-      </div>
-      <div className="doted_line"></div>
     </header>
   );
 };
