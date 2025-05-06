@@ -469,9 +469,7 @@ h5 {
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .tech-stack {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
 
   h1 {
     font-size: 2.5rem;
@@ -495,9 +493,17 @@ h5 {
   .scroll_down,
   .mine,
   .doted_line,
-  .under_line {
+  .under_line,
+  .tech-section {
     display: none;
   }
+
+  .cta {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
   .cta .btn {
     width: 100%;
   }
