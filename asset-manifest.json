@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a7870652.css",
+    "main.css": "/static/css/main.f0740f9f.css",
     "main.js": "/static/js/main.50a27920.js",
     "static/media/tech-desktop.jpg": "/static/media/tech-desktop.8b52322b1cc1d030d3fe.jpg",
     "static/media/tech-mobile.jpg": "/static/media/tech-mobile.70d92442d635eb70c706.jpg",
@@ -13,11 +13,11 @@
     "static/media/Drick__Logo.png": "/static/media/Drick__Logo.062c4a739a3111705d14.png",
     "static/media/Bresen.png": "/static/media/Bresen.815a3b9dc128c1ccd952.png",
     "index.html": "/index.html",
-    "main.a7870652.css.map": "/static/css/main.a7870652.css.map",
+    "main.f0740f9f.css.map": "/static/css/main.f0740f9f.css.map",
     "main.50a27920.js.map": "/static/js/main.50a27920.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7870652.css",
+    "static/css/main.f0740f9f.css",
     "static/js/main.50a27920.js"
   ]
 }
